@@ -3,49 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Статичная страница</title>
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="css/app.min.css">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/redesign.css">
 
 </head>
 <body>
-    <div class="grid-container">
-        <a href="/index.html">Главная</a> / 
-        <a href="/Авторизация.html">Авторизация</a> / 
-        <a href="/Аккаунт.html">Аккаунт</a> / 
-        <a href="/Бренды.html">Бренды</a> / 
-        <a href="/Вакансии.html">Вакансии</a> / 
-        <a href="/Доставка.html">Доставка</a> / 
-        <a href="/Карта сайта.html">Карта сайта</a> / 
-        <a href="/Контакты.html">Контакты</a> / 
-        <a href="/Курсы_1.html">Курсы (карточки)</a> / 
-        <a href="/Курсы_2.html">Курсы (детальное)</a> / 
-        <a href="/Курсы_3.html">Курсы (расписание)</a> / 
-        <a href="/Новости.html">Новости</a> / 
-        <a href="/Новости_2.html">Новости (детальное)</a> / 
-        <a href="/Статичная страница.html">Статичная страница</a> /
-        <a href="/Каталог_1.html">Каталог_1</a> /
-        <a href="/Каталог_2.html">Каталог_2</a> /
-        <a href="/Страница товара.html">Страница товара</a>
-    </div>
-
+    
     <!-- Компонент хедера -->
     <header>
+        <a href="https://wa.me/?phone=79142733762" class="header__top-banner banner-wave" target="_blank">
+            <div class="header__top-text">
+                Запись на маникюр, педикюр здесь               
+                <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 10px">
+                    <path d="M12.9999 3.00409H3.4099L4.7099 1.71409C4.8982 1.52579 5.00399 1.27039 5.00399 1.00409C5.00399 0.73779 4.8982 0.482395 4.7099 0.294092C4.52159 0.105788 4.2662 1.9841e-09 3.9999 0C3.73359 -1.9841e-09 3.4782 0.105788 3.2899 0.294092L0.289896 3.29409C0.198856 3.3892 0.127491 3.50134 0.0798963 3.62409C-0.0201217 3.86755 -0.0201217 4.14063 0.0798963 4.38409C0.127491 4.50684 0.198856 4.61899 0.289896 4.71409L3.2899 7.71409C3.38286 7.80782 3.49346 7.88221 3.61532 7.93298C3.73718 7.98375 3.86788 8.00989 3.9999 8.00989C4.13191 8.00989 4.26261 7.98375 4.38447 7.93298C4.50633 7.88221 4.61693 7.80782 4.7099 7.71409C4.80363 7.62113 4.87802 7.51053 4.92879 7.38867C4.97956 7.26681 5.00569 7.1361 5.00569 7.00409C5.00569 6.87208 4.97956 6.74137 4.92879 6.61951C4.87802 6.49766 4.80363 6.38705 4.7099 6.29409L3.4099 5.00409H12.9999C13.2651 5.00409 13.5195 5.10945 13.707 5.29699C13.8945 5.48452 13.9999 5.73888 13.9999 6.00409V11.0041C13.9999 11.2693 14.1053 11.5237 14.2928 11.7112C14.4803 11.8987 14.7347 12.0041 14.9999 12.0041C15.2651 12.0041 15.5195 11.8987 15.707 11.7112C15.8945 11.5237 15.9999 11.2693 15.9999 11.0041V6.00409C15.9999 5.20844 15.6838 4.44538 15.1212 3.88277C14.5586 3.32016 13.7955 3.00409 12.9999 3.00409Z" fill="#FFF"></path>
+                </svg>
+            </div>
+        </a>
+
         <div class="header__top">
             <div class="grid-container">
                 <div class="header__top-content">
                     <div class="header__top-cities">
                         <ul class="dropdown menu custom" data-dropdown-menu data-click-open="true" data-disable-hover="true">
                             <li>
-                                <a href="#" class="custom__selected">Якутск</a>
-                                <ul class="menu">
-                                    <li><a href="#">Москва</a></li>
-                                    <li><a href="#">Санкт-Петербург</a></li>
-                                    <li><a href="#">Новосибирск</a></li>
-                                </ul>
+                                <span class="custom-selected">Якутск</span>
                             </li>
                         </ul>
                     </div>
@@ -59,53 +46,20 @@
                         <div class="location">
                             <ul class="dropdown menu custom" data-dropdown-menu data-click-open="true" data-disable-hover="true">
                                 <li>
-                                    <a href="#" class="custom__selected">
-                                        <i class="icon-location"></i>
-                                        ТЦ “Атлант”, 2 этаж ( 8‒914‒2‒725‒521 )            
+                                    <a href="#" class="custom__selected">   
+                                        ТЦ “ЦУМ”, 5 этаж ( +7984-113-63-70)      
                                     </a>
                                     <ul class="menu">
-                                        <li><a href="#">ТЦ “Атлант”, 2 этаж ( 8‒914‒2‒725‒521 )</a></li>
-                                        <li><a href="#">ТЦ “Атлант”, 2 этаж ( 8‒914‒2‒725‒521 )</a></li>
-                                        <li><a href="#">ТЦ “Атлант”, 2 этаж ( 8‒914‒2‒725‒521 )</a></li>
+                                        <li><a href="#">ТЦ “ЦУМ”, 5 этаж ( +7984-113-63-70)</a></li>
+                                        <li><a href="#">ТЦ “ЦУМ”, 5 этаж ( +7984-113-63-70)</a></li>
+                                        <li><a href="#">ТЦ “ЦУМ”, 5 этаж ( +7984-113-63-70)</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="header__top-search">
-                        <button class="button pc-search" data-toggle="pc-search"><i class="icon-search"></i></button>
-                        <div class="pc-search__block small reveal " id="pc-search" data-reveal>
-                            <form action="#" class="pc-search__form">
-                                <input type="text" name="search" id="search" class="pc-search__input" placeholder="Введите поисковый запрос, например, жидкость для снятия лака">
-                                <button type="submit" class="pc-search__button"><i class="icon-search"></i></button>
-                            </form>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </div>
-        <div class="header__center">
-            <div class="grid-container">
-                <div class="header__center-content">
-                    <div class="header__logo">
-                        <a href="#" class="header__logo-link">
-                            <img src="/images/header/logo.png" alt="Логотип">
-                            Академия Красоты
-                        </a>
-                    </div>
-                    <div class="header__menu">
-                        <!-- desktop nav -->
+                    <div class="header__top-clients">
                         <ul class="dropdown menu show-for-large" data-dropdown-menu data-click-open="true" data-disable-hover="true">
-                            <li>
-                                <a href="#">О компании</a>
-                                <ul class="menu">
-                                    <li><a href="#">Item 1A</a></li>
-                                    <li><a href="#">Item 1A</a></li>
-                                    <li><a href="#">Item 1A</a></li>
-                                    <!-- ... -->
-                                </ul>
-                            </li>
-                            <li><a href="#">Новости</a></li>
                             <li><a href="#">Оптовикам</a></li>
                             <li>
                                 <a href="#">Покупателям</a>
@@ -114,36 +68,7 @@
                                     <!-- ... -->
                                 </ul>
                             </li>
-                            <li><a href="#">Салон</a></li>
-                            <li>
-                                <a href="#">Учебный центр</a>
-                                <ul class="menu">
-                                    <li><a href="#">Item 1A</a></li>
-                                    <!-- ... -->
-                                </ul>
-                            </li>
                         </ul>
-                        <!-- mobile nav -->
-                        <ul class="dropdown menu hide-for-large" data-dropdown-menu data-click-open="true" data-disable-hover="true">
-                            <li>
-                                <a href="#">О компании</a>
-                                <ul class="menu">
-                                    <li><a href="#">Item 1A</a></li>
-                                    <li><a href="#">Item 1A</a></li>
-                                    <li><a href="#">Item 1A</a></li>
-                                    <!-- ... -->
-                                </ul>
-                            </li>
-                            <li><a href="#">Новости</a></li>
-                            <li>
-                                <a href="#">Еще</a>
-                                <ul class="menu">
-                                    <li><a href="#">Item 1A</a></li>
-                                    <!-- ... -->
-                                </ul>
-                            </li>
-                        </ul>
-
                     </div>
                     <div class="header__sign">
                         <button class="sign__button" type="button" data-toggle="sign-up">Регистрация</button>
@@ -215,6 +140,90 @@
                                 <a href="#">Зарегистрируйтесь</a>
                             </div>
                         </div>
+                    </div>             
+                </div>
+            </div>
+        </div>
+        <div class="header__center">
+            <div class="grid-container">
+                <div class="header__center-content">
+                    <div class="header__logo">
+                        <a href="#" class="header__logo-link">
+                            <img src="/images/header/new-logo.svg" alt="Логотип">
+                        </a>
+                    </div>
+                    <div class="header__top-search">
+                        //search input
+                    </div>    
+                    <div class="header__menu">
+                        <!-- desktop nav -->
+                        <ul class="dropdown menu show-for-large" data-dropdown-menu data-click-open="true" data-disable-hover="true">
+                            <li>
+                                <a href="#">О компании</a>
+                                <ul class="menu">
+                                    <li><a href="#">Item 1A</a></li>
+                                    <li><a href="#">Item 1A</a></li>
+                                    <li><a href="#">Item 1A</a></li>
+                                    <!-- ... -->
+                                </ul>
+                            </li>
+                            <li><a href="#">Новости</a></li>
+                            <li>
+                                <a href="#">Салон</a>
+                                <ul class="menu">
+                                    <li><a href="#">Item 1A</a></li>
+                                    <!-- ... -->
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Обучение </a>
+                                <ul class="menu">
+                                    <li><a href="#">Item 1A</a></li>
+                                    <!-- ... -->
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- mobile nav -->
+                        <ul class="dropdown menu hide-for-large" data-dropdown-menu data-click-open="true" data-disable-hover="true">
+                            <li>
+                                <a href="#">О компании</a>
+                                <ul class="menu">
+                                    <li><a href="#">Item 1A</a></li>
+                                    <li><a href="#">Item 1A</a></li>
+                                    <li><a href="#">Item 1A</a></li>
+                                    <!-- ... -->
+                                </ul>
+                            </li>
+                            <li><a href="#">Новости</a></li>
+                            <li>
+                                <a href="#">Еще</a>
+                                <ul class="menu">
+                                    <li><a href="#">Item 1A</a></li>
+                                    <!-- ... -->
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="widgets">
+                        <div class="widget">
+                            <a href="#">
+                                <i class="icon-compare"></i>
+                                <span class="count">3</span>
+                            </a>
+                        </div>
+                        <div class="widget">
+                            <a href="#">
+                                <i class="icon-favorite"></i>
+                                <span class="count">23</span>
+                            </a>
+                        </div>
+                        <div class="widget">
+                            <a href="#">
+                                <i class="icon-cart"></i>
+                                <span class="count">5</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,75 +246,6 @@
                             <li><a href="#" class="catalog__item">Оборудование</a></li>
                             <li><a href="#" class="catalog__item">Прочее</a></li>
                         </ul>
-                        <div class="dropdown-pane" id="brands-tab" data-dropdown data-hover="true" data-hover-pane="true">
-                            <div class="catalog__content">
-                                <ul class="tabs" data-tabs id="brands-tab">
-                                    <li class="tabs-title is-active"><a href="#A" aria-selected="true">A</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="B" href="#B">B</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="C" href="#C">C</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="D" href="#D">D</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="E" href="#E">E</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="F" href="#F">F</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="G" href="#G">G</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="H" href="#H">H</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="I" href="#I">I</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="J" href="#J">J</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="K" href="#K">K</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="L" href="#L">L</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="M" href="#M">M</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="N" href="#N">N</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="O" href="#O">O</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="P" href="#P">P</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="R" href="#R">R</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="S" href="#S">S</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="T" href="#T">T</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="U" href="#U">U</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="V" href="#V">V</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="W" href="#W">W</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="Y" href="#Y">Y</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="Z" href="#Z">Z</a></li>
-                                    <li class="tabs-title three"><a data-tabs-target="А-Я" href="#А-Я">А-Я</a></li>
-                                    <li class="tabs-title three"><a data-tabs-target="0-9" href="#0-9">0-9</a></li>
-                                </ul>
-                                <div class="tabs-content" data-tabs-content="brands-tab">
-                                    <div class="tabs-panel is-active" id="A">
-                                        <div class="title"></div> <!-- ставится автоматом (jquery) -->
-                                        
-                                        <ul class="grid-x grid-padding-x small-up-2 medium-up-3 large-up-6 brands-tab__list">
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Aasha Herbals</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Adri Coco</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">AIRnails</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alan Hadash</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alba Botanica</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alfaparf Milano</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Almea</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Aasha Herbals</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Adri Coco</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">AIRnails</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alan Hadash</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alba Botanica</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alfaparf Milano</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Almea</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Aasha Herbals</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Adri Coco</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">AIRnails</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alan Hadash</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alba Botanica</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alfaparf Milano</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Almea</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Aasha Herbals</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Adri Coco</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">AIRnails</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="tabs-panel" id="B">
-                                        <div class="title"></div> <!-- ставится автоматом (jquery) -->
-
-                                        <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="dropdown-pane" id="gel-tab" data-dropdown data-hover="true" data-hover-pane="true">
                             <div class="catalog__content">
                                 <ul class="catalog__list">
@@ -391,26 +331,6 @@
                     </div>
 
                     <!-- /Mobile Menu -->
-                    <div class="widgets">
-                        <div class="widget">
-                            <a href="#">
-                                <i class="icon-compare"></i>
-                                <span class="count">3</span>
-                            </a>
-                        </div>
-                        <div class="widget">
-                            <a href="#">
-                                <i class="icon-favorite"></i>
-                                <span class="count">23</span>
-                            </a>
-                        </div>
-                        <div class="widget">
-                            <a href="#">
-                                <i class="icon-cart"></i>
-                                <span class="count">5</span>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -419,6 +339,14 @@
 
     <main>
 
+        
+        <div class="grid-container section-back__link">
+            <div class="grid-x grid-padding-x alc">
+                <i class="icon-back"></i>
+                <span>Назад</span>
+            </div>
+        </div>
+
         <!-- Breadcrumb -->
 
         <div class="grid-container">
@@ -426,7 +354,7 @@
                 <nav role="navigation" class="cell large-12">
                     <ul class="breadcrumbs">
                         <li><a href="#">Главная</a></li>
-                        <li>Бренды по алфавиту</li>
+                        <li>Бренды</li>
                     </ul>
                 </nav>
             </div>
@@ -436,94 +364,15 @@
 
         <section class="section__static">
             <div class="grid-container">
-                <div class="grid-x grid-padding-x">
-                    
-    
-    
-                    <div class="cell large-12 medium-12 small-12">
-                        <h1>Бренды по алфавиту</h1>
-                    </div>
-    
-                    <div class="cell large-12 medium-12 small-12">
-                        <div class="sitemap__content">
-
-                            <div class="catalog__content">
-                                <ul class="tabs" data-tabs id="brands-tab-map">
-                                    <li class="tabs-title is-active"><a href="#A_map" aria-selected="true">A</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="B_map" href="#B_map">B</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="C" href="#C">C</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="D" href="#D">D</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="E" href="#E">E</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="F" href="#F">F</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="G" href="#G">G</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="H" href="#H">H</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="I" href="#I">I</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="J" href="#J">J</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="K" href="#K">K</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="L" href="#L">L</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="M" href="#M">M</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="N" href="#N">N</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="O" href="#O">O</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="P" href="#P">P</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="R" href="#R">R</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="S" href="#S">S</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="T" href="#T">T</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="U" href="#U">U</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="V" href="#V">V</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="W" href="#W">W</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="Y" href="#Y">Y</a></li>
-                                    <li class="tabs-title"><a data-tabs-target="Z" href="#Z">Z</a></li>
-                                    <li class="tabs-title three"><a data-tabs-target="А-Я" href="#А-Я">А-Я</a></li>
-                                    <li class="tabs-title three"><a data-tabs-target="0-9" href="#0-9">0-9</a></li>
-                                </ul>
-                                <div class="tabs-content" data-tabs-content="brands-tab-map">
-                                    <div class="tabs-panel is-active" id="A_map">
-                                        <div class="title"></div> <!-- ставится автоматом (jquery) -->
-                                        
-                                        <ul class="grid-x grid-padding-x small-up-2 medium-up-3 large-up-6 brands-tab__list">
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Aasha Herbals</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Adri Coco</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">AIRnails</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alan Hadash</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alba Botanica</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alfaparf Milano</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Almea</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Aasha Herbals</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Adri Coco</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">AIRnails</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alan Hadash</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alba Botanica</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alfaparf Milano</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Almea</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Aasha Herbals</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Adri Coco</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">AIRnails</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alan Hadash</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alba Botanica</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Alfaparf Milano</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Almea</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Aasha Herbals</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">Adri Coco</a></li>
-                                            <li class="cell"><a href="#" class="brands-tab__list-item">AIRnails</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="tabs-panel" id="B_map">
-                                        <div class="title"></div> <!-- ставится автоматом (jquery) -->
-
-                                        <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="big-title">
+                    <h1>Бренды</h1>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Компонент футера -->
-    <footer>
+    <footer class="footer">
         <div class="subscribe">
             <div class="grid-container">
                 <div class="grid-x">
@@ -547,28 +396,45 @@
                 <div class="cell large-6 medium-4">
                     <div class="footer__logo">
                         <a href="#" class="header__logo-link">
-                            <img src="/images/header/logo.png" alt="Логотип">
-                            Академия Красоты
+                            <img src="/images/header/new-logo.svg" alt="Логотип">
                         </a>
                     </div>
                     <div class="footer__contacts">
                         <div class="grid-x grid-padding-x">
-                            <div class="cell large-6">
+                            <div class="cell large-4">
                                 <ul class="footer__list">
                                     <li class="footer__list-item"><a href="#" class="footer__list-link">О компании</a></li>
                                     <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
                                     <li class="footer__list-item"><a href="#" class="footer__list-link">Салон</a></li>
                                     <li class="footer__list-item"><a href="#" class="footer__list-link">Оптовикам</a></li>
                                 </ul>
+                                
                             </div>
-                            <div class="cell large-6">
+                            <div class="cell large-4">
                                 <ul class="footer__list">
                                     <li class="footer__list-item"><a href="#" class="footer__list-link"><i class="icon-phone"></i> 8 914 222 33 44</a></li>
                                     <li class="footer__list-item"><a href="#" class="footer__list-link"><i class="icon-instagram"></i>akademia_krasoty_ykt_shop</a></li>
                                     <li class="footer__list-item"><a href="#" class="footer__list-link"><i class="icon-instagram"></i>akademia_ykt</a></li>
-                                </ul>                           
+                                </ul>
+                                                  
                             </div>
                         </div>    
+                    </div>
+                    <div class="footer__about">
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell large-4">
+                                <div class="sitemap__block">
+                                    <a href="#" class="sitemap__link"><i class="icon-map"></i> Карта сайта</a>
+                                </div>
+                            </div>
+                            <div class="cell large-6">
+                                <div class="copyright">
+                                    <div class="copyright__item">© 2020 “Академия Красоты”</div>
+                                    <div class="copyright__item">Дизайн и разработка <a href="#">Платформа</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="cell large-2 medium-auto">
@@ -582,7 +448,7 @@
                         <li class="footer__list-item"><a href="#" class="footer__list-link">Уход за кожей</a></li>
                         <li class="footer__list-item"><a href="#" class="footer__list-link">Оборудование</a></li>
                         <li class="footer__list-item"><a href="#" class="footer__list-link">Прочее</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__list-link red">Полный каталог</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Полный каталог</a></li>
                     </ul>
                 </div>
                 <div class="cell large-2 medium-auto">
@@ -633,27 +499,7 @@
                     <li><a href="#" class="sitemap"><i class="icon-map"></i> Карта сайта</a></li>
                 </ul>
             </div>
-            <div class="grid-x grid-padding-x">
-                <div class="cell large-12">
-                    <div class="footer__bottom">
-                        <div class="footer__phone">
-                            <i class="icon-phone"></i>
-                            <div class="footer__phone-text">
-                                Интернет-магазин:
-                                <a href="#">8 914 222 33 44</a>
-                            </div>
-                        </div>
-                        <div class="sitemap__block">
-                            <a href="#" class="sitemap__link"><i class="icon-map"></i> Карта сайта</a>
-                        </div>
-                        <div class="copyright">
-                            <div class="copyright__item">© 2020 “Академия Красоты”</div>
-                            <div class="copyright__item">Дизайн и разработка <a href="#">Платформа</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            
     </footer>
     <!-- / Компонент футера -->
 
@@ -661,7 +507,30 @@
     <!-- Compressed JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.2/dist/js/foundation.min.js"></script>
     <!-- Slick JS -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/js/dist.js"></script>
+    <script type="text/javascript" src="/js/slick.js"></script>
+    <script type="text/javascript" src="/js/progressBar.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="/js/dist.js"></script>
+
+    <div class="grid-container">
+        <a href="/index.html">Главная</a> / 
+        <a href="/Авторизация.html">Авторизация</a> / 
+        <a href="/Аккаунт.html">Аккаунт</a> / 
+        <a href="/Бренды.html">Бренды</a> / 
+        <a href="/Вакансии.html">Вакансии</a> / 
+        <a href="/Доставка.html">Доставка</a> / 
+        <a href="/Карта сайта.html">Карта сайта</a> / 
+        <a href="/Контакты.html">Контакты</a> / 
+        <a href="/Курсы_1.html">Курсы (карточки)</a> / 
+        <a href="/Курсы_2.html">Курсы (детальное)</a> / 
+        <a href="/Курсы_3.html">Курсы (расписание)</a> / 
+        <a href="/Новости.html">Новости</a> / 
+        <a href="/Новости_2.html">Новости (детальное)</a> / 
+        <a href="/Статичная страница.html">Статичная страница</a> /
+        <a href="/Каталог_1.html">Каталог_1</a> /
+        <a href="/Каталог_2.html">Каталог_2</a> /
+        <a href="/Страница товара.html">Страница товара</a>
+    </div>
+
 </body>
 </html>
