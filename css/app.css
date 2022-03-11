@@ -4622,7 +4622,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 
 .pagination a:hover,
 .pagination button:hover {
-  background: #D81B60;
+  background: #212121;
 }
 
 .pagination .current {

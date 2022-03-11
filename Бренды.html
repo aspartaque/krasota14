@@ -343,7 +343,7 @@
         <div class="grid-container section-back__link">
             <div class="grid-x grid-padding-x alc">
                 <i class="icon-back"></i>
-                <span>Назад</span>
+                <a href="#">Назад</a>
             </div>
         </div>
 
@@ -354,7 +354,7 @@
                 <nav role="navigation" class="cell large-12">
                     <ul class="breadcrumbs">
                         <li><a href="#">Главная</a></li>
-                        <li>Бренды</li>
+                        <li class="enable">Бренды</li>
                     </ul>
                 </nav>
             </div>
@@ -367,6 +367,41 @@
                 <div class="big-title">
                     <h1>Бренды</h1>
                 </div>
+                <div class="section-descr">
+                    <span>
+                        Наш интернет-магазин является официальным дилером представленных торговых марок. Это означает, что вся продукция действительно фирменная, никакого «серого импорта». На все товары распространяется гарантия производителя, а цены в нашем магазине соответствуют рекомендованным производителем.
+                    </span>
+                </div>
+                <div class="grid grid-4 mt-30">
+                    <div class="brand__card">
+                        <a href="#">
+                            <div class="brand__card-content">
+                                <div class="brand__card-img">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                </div>
+                                <div class="brand__card-title mt-30">
+                                    <span>
+                                        Наименование бренда
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <ul class="pagination" role="navigation" aria-label="Pagination">
+                    <li class="pagination-previous disabled">
+                        <span class="hide-for-small-only">Назад</span>
+                        <span class="show-for-small-only"><i class="icon-breadcrumb"></i></span>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="/brend/?PAGEN_1=2">2</a></li>
+                    <li><a href="/brend/?PAGEN_1=3">3</a></li>
+                    <li><a href="/brend/?PAGEN_1=4">4</a></li>
+                    <li class="pagination-next">
+                        <span class="hide-for-small-only"><a href="/brend/?PAGEN_1=2" aria-label="Next page">Вперед</a></span>
+                        <span class="show-for-small-only"><a href="/brend/?PAGEN_1=2" aria-label="Next page"><i class="icon-breadcrumb"></i></a></span>
+                    </li>
+                 </ul>
             </div>
         </section>
     </main>

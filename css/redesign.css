@@ -227,7 +227,7 @@
 .alc {
   align-items: center;
 }
-.section-back__link span {
+.section-back__link a {
   margin-left: 10px;
   font-weight: normal;
   font-size: 16px;
@@ -244,11 +244,144 @@
 .section__static {
   padding: 60px 0;
 }
-
+.big-title {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E0E0E0;
+}
 .big-title h1 {
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
   color: #000000;
   text-align: left;
+  padding: 0;
+}
+.breadcrumbs .enable {
+  font-weight: 700;
+}
+.section-descr {
+  margin-top: 30px;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.brand__card {
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  
+}
+.brand__card-content {
+  padding: 30px;
+}
+.brand__card-img {
+  border-radius: 6px;
+  overflow: hidden;
+}
+.brand__card-img img {
+  width: 100%;
+  max-height: 160px;
+  height: 100%;
+  object-fit: cover;
+}
+.brand__card-title {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+} 
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.news__card {
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+}
+.news__card-content {
+  padding: 30px;
+
+}
+.news__card-img {
+  border-radius: 6px;
+  overflow: hidden;
+}
+.news__card-img img {
+  width: 100%;
+  max-height: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+.news__card-title span {
+  font-weight: 700;
+}
+.news__card-date {
+  margin-top: 15px;
+}
+.news__card-date span {
+  font-size: 16px;
+  line-height: 20px;
+  color: #9E9E9E;
+} 
+.news__detail {
+
+}
+.news__detail-content {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+}
+.news__detail-card {
+  display: flex;
+  justify-content: space-between;
+}
+.news__detail-card_img {
+  width: 50%;
+  padding: 30px;
+}
+.news__detail-card-info {
+  width: 50%;
+  border-left: 1px solid #E0E0E0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card_img {
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card__info-date {
+  margin-bottom: 30px;
+}
+.date-gray {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #9E9E9E;
+}
+.card__info-title {
+  margin-bottom: 30px;
+}
+.card__info-title h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #000000;
+}
+.card__info-descr {
+}
+.card__info-btn {
+  display: flex;
+}
+.section-more {
+  margin-top: 60px;
+}
+.section__products {
+  margin-top: 40px;
 }

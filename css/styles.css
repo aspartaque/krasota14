@@ -254,7 +254,7 @@ body,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 200px;
+  min-height: unset;
 }
 
 .card-section__image img {
@@ -454,19 +454,20 @@ body,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  max-height: 200px;
 }
 
 .grid-table .card-section__image {
   margin-bottom: 0;
-  width: 30%;
+  width: 100%;
   min-width: 240px;
-  max-width: 240px;
+  max-width: 300px;
   margin-right: 1rem;
 }
 
 .grid-table .card-section__label {
-  left: 0;
-  right: auto;
+  left: auto;
+  right: 0;
 }
 
 .grid-table .card-section__content {
@@ -502,21 +503,15 @@ body,
 }
 
 .grid-table .card-section__button.plus {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+
 }
 
 .grid-table .card-section__button.compare {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+
 }
 
 .grid-table .card-section__button.favorite {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+
 }
 
 .grid-table .card-section__button:hover {
@@ -1368,6 +1363,7 @@ body,
   padding: 13px 16px 13px 16px;
   height: auto;
   background: #6B6B6B;
+  transition: .3s;
 }
 .subscribe__form i {
   color: #CDCDCD;
@@ -1377,7 +1373,9 @@ body,
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background: #6B6B6B;
+  background: white;
+  transition: .3s;
+  color: #424242;
 }
 
 .input-custom__button {
@@ -2551,6 +2549,7 @@ textarea {
   display: flex;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .pagination li {
@@ -2902,9 +2901,10 @@ textarea {
   height: 65px;
   padding: 1rem;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: #3F4351;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-transform: uppercase;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2912,8 +2912,11 @@ textarea {
   outline: none;
   z-index: 11;
   position: relative;
+  justify-content: center;
 }
-
+.filter.filter__catalog i {
+  margin-left: 16px;
+}
 .filter.hover {
   color: #D81B60;
   border-radius: 4px 4px 0 0;
